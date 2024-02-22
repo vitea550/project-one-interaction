@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+overflow-y: hidden;
+
+}
+
+
+.title {
+    color: white;
+    font-size: 3em;
+    transition: transform 0.3s ease;
+}
+
+.title:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    color: white;
+    font-size: 3em;
+    position: relative;
+}
+
+.title2 {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    inline-size: 300px;
+}
+
+.title3 {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    inline-size: 300px;
+}
+
+.title4 {
+    color: white;
+    font-size: 4em;
+    position: absolute;
+    right: 100px;
+    inline-size: 300px;
+}
+
+.title5 {
+    color: white;
+    font-size: 4em;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    inline-size: 425px;
+    font-size: 48px;
+}
+
+.title6 {
+    color: white;
+    font-size: 4em;
+    position: absolute;
+    left: 100px;
+    bottom: 125px;
+    inline-size: 425px;
+    font-size: 24px
+}
+
+.flashlight {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 0, 0.3);
+    mix-blend-mode: lighten; 
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    transition: width 0.1s, height 0.1s, opacity 1s ease-in-out; /* Added opacity transition */
+    z-index: 9999; 
+    box-shadow: 0 0 80px rgba(255, 255, 0, 0.7); /* Outer glow effect */
+}
+
+.flashlight:hover {
+    opacity: 0.5; 
+     filter: invert(100%); 
+}
+
+.body-container div{
+    color: white;
+    font-size: 3em;
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    animation-name: shadow-in;
+    animation-duration: 4s;
+
+
+}
+
+
+.header-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: shadow-in;
+    animation-duration: 3s;
+}
+
+.header-container2{
+    height: 100vh;
+    display: inline-block;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    animation-name: shadow-in;
+    animation-duration: 3s;
+
+}
+
+@keyframes shadow-in {
+    from {background-color: white; opacity: 0.5}
+    to {background-color: black;}
+}
+
+
+
+
+
